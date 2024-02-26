@@ -15,6 +15,8 @@ app.use(express.static("storage"));
 const engine = process.env.DB_ENGINE || null;
 const port = process.env.PORT || 3000;
 
+console.log(process.env.PORT);
+
 morganBody(app, {
   skip: function (req, res) {
     return (
